@@ -1,0 +1,63 @@
+.nav-bar {
+    background-color: var(--nav-bgc);
+    /* color: var(--page-color); */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar > a, .nav-bar > ul a {  
+    text-decoration: none;
+}
+
+.nav-bar > a > h1, mark {
+    color: var(--page-color)
+}
+
+.mark-span {
+    padding-left: var(--mark-spacer);
+}
+
+mark {
+    background-color: var(--mark-color);
+    padding: var(--mark-spacer);
+    border-radius: calc(var(--mark-spacer) * 1.7);
+}
+mark:hover {
+    border-radius: calc(var(--mark-spacer) * 1.6);
+    --mark-color: var(--navhover-color);
+}
+
+.nav-bar > ul {
+    display: flex;
+}
+
+.nav-bar > ul > li {
+    list-style: none;
+    padding-left: var(--mark-spacer);
+}
+
+.nav-bar > ul > li > a {
+    color: var(--page-color);
+    padding: var(--mark-spacer);
+    cursor: pointer;
+}
+
+.nav-bar > ul > li > a:hover {
+    background-color: var(--navhover-color);
+    
+    padding: var(--mark-spacer);
+    border-radius: calc(var(--mark-spacer) * 1.6);
+   
+}
+
+.logo-A {
+    font-size: calc(var(--mark-spacer) * 8 );
+    color: var(--navhover-color);
+}
+
+.logo-A:hover {
+    border-radius: calc(var(--mark-spacer) * 1.6);
+    color: var(--mark-color);
+}

@@ -1,0 +1,18 @@
+.resume-title {
+    text-decoration:underline 3px solid var(--page-color);
+}
+
+.resume-li > li {
+    list-style: none;
+}
+
+.resume-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-table-header > a, .resume-title > a {
+    text-decoration: none;
+    color: inherit;
+}

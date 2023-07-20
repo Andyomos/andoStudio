@@ -1,0 +1,80 @@
+
+.showcase {
+    min-height: 50vh;
+    background-image: url('/imgs/skysea-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: left 45% bottom 10%;
+    background-size: auto;
+    background-color: var(--bbg-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .showcase {
+        display: none;
+    }
+}
+.showcase-col {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: calc(var(--mark-spacer) * 10);
+    border-radius: calc(var(--mark-spacer) * 1.6);
+    font-family: var(--optional-font);
+}
+.showcase-col > h2 {
+    text-align: center;
+    font-size: calc(var(--mark-spacer) * 10);
+    margin-bottom: calc(var(--mark-spacer) * 0);
+}
+
+.showcase-col > h3 {
+    margin-top: calc(var(--mark-spacer) * 0);
+    font-weight: calc(var(--mark-spacer) * 80);
+}
+
+.showcase-A {
+    font-size: calc(var(--mark-spacer) * 10);
+    color: var(--page-color);
+    cursor: pointer;
+}
+
+.frontpage-info {
+    /* background-image: url('/imgs/wood-bgrd.jpg'); */
+    /* background-repeat: no-repeat; */
+    background-position: top 45% right 10%;
+    background-size: auto;
+    background-image: linear-gradient(20deg, rgb(136, 68, 4), rgb(190, 123, 83), var(--bbgl-color));
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.frontpage-info-row {
+    display: flex;
+    /* background-color: var(--bbgl-color); */
+    align-items: center;
+    padding: calc(var(--mark-spacer) * 0) calc(var(--mark-spacer) * 20);
+
+}
+
+@media only screen and (max-width: 855px) {
+ .frontpage-info-row {
+    display: flex;
+    flex-direction: column;
+ }
+}
+
+.andy-card-title, .andy-card-body {
+    text-align: center;
+}
+.andy-card-info {
+    width: calc(var(--mark-spacer) * 80);
+    margin: 20px;
+}
+.andy-card-body > img {
+    height: 260px;
+    width: 200px;
+}
+

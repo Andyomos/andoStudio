@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto:ital,wght@0,100;0,400;1,100;1,700&display=swap');
+
+:root {
+    --gbg-color: rgb(211, 211, 211);
+    --bbg-color: rgb(0, 0, 0);
+    --bbgl-color: rgba(82, 114, 191, 0.85);
+    --nav-bgc: rgb(0, 0, 139);
+    --page-color: rgb(255, 255, 255);
+    --mark-spacer: 5px;
+    --mark-color: rgb(255, 0, 0);
+    --navhover-color: rgba(82, 114, 191, 0.753);
+    --page-font: 'Roboto', sans-serif;
+    --optional-font: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--background-color, rgba(211, 211, 211, 0.85));
+    color: var(--page-color);
+    font-family: var(--page-font);
+    font-weight: calc(var(--mark-spacer) * 80);
+
+    position: relative;
+    word-wrap: break-word;
+
+    min-height: 100vh;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.3px;
+    word-spacing: 1.5px;
+    line-height: 1.5;
+     word-wrap: break-word;
+}
+
